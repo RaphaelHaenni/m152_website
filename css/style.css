@@ -1,0 +1,105 @@
+:root {
+    --colour-main: #2C5E2E;
+    --colour-complementary: #70B85D;
+  	--colour-accent: #0C273D;
+    --colour-accent-light: #54D0ED;
+    --colour-light: #FFFEF1;
+    --colour-text: #333333;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  color: var(--colour-text);
+  background-color: var(--colour-light);
+}
+
+.clearer {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+hr {
+  background-color: #fff;
+	border-top: 2px dashed var(--colour-complementary);
+  margin-bottom: 5em;
+}
+
+nav {
+  background-color: var(--colour-main);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 90;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a button {
+  border: none;
+  background-color: var(--colour-main);
+  height: 4em;
+  width: 10em;
+  color: var(--colour-light);
+}
+
+nav a button:hover {
+  border: none;
+  background-color: var(--colour-complementary);
+}
+
+.title {
+  color: var(--colour-text);
+  text-align: center;
+}
+
+#content {
+  width: 70%;
+  margin: 5em auto 0 auto;
+}
+
+.bottom {
+  text-align: center;
+  width: 100%;
+  bottom: 20;
+  left: 0;
+  position: absolute;
+}
+
+.humongous {
+  font-size: 30pt;
+  font-weight: 900;
+}
+
+.container {
+  min-height: 100%;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  margin: 2em 0;
+}
+
+.description {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--colour-main);
+  height: 20em;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
