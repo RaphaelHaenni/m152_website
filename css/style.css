@@ -8,98 +8,139 @@
 }
 
 html {
-  font-family: Arial, sans-serif;
-  color: var(--colour-text);
-  background-color: var(--colour-light);
+    font-family: Arial, sans-serif;
+    color: var(--colour-text);
+    background-color: var(--colour-light);
 }
 
 .clearer {
-  clear: both;
+    clear: both;
 }
 
 .left {
-  float: left;
+    float: left;
 }
 
 .right {
-  float: right;
+    float: right;
 }
 
 hr {
-  background-color: #fff;
+    background-color: #fff;
 	border-top: 2px dashed var(--colour-complementary);
-  margin-bottom: 5em;
+    margin-bottom: 5em;
 }
 
 nav {
-  background-color: var(--colour-main);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 90;
+    background-color: var(--colour-main);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 90;
 }
 
 nav a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 nav a button {
-  border: none;
-  background-color: var(--colour-main);
-  height: 4em;
-  width: 10em;
-  color: var(--colour-light);
+    border: none;
+    background-color: var(--colour-main);
+    height: 4em;
+    width: 10em;
+    color: var(--colour-light);
 }
 
 nav a button:hover {
-  border: none;
-  background-color: var(--colour-complementary);
+    border: none;
+    background-color: var(--colour-complementary);
 }
 
 .title {
-  color: var(--colour-text);
-  text-align: center;
+    color: var(--colour-text);
+    text-align: center;
 }
 
 #content {
-  width: 70%;
-  margin: 5em auto 0 auto;
+    width: 70%;
+    margin: 5em auto 0 auto;
 }
 
 .bottom {
-  text-align: center;
-  width: 100%;
-  bottom: 20;
-  left: 0;
-  position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 20;
+    left: 0;
+    position: absolute;
 }
 
 .humongous {
-  font-size: 30pt;
-  font-weight: 900;
+    font-size: 30pt;
+    font-weight: 900;
 }
 
 .container {
-  min-height: 100%;
+    min-height: 100%;
 }
 
 .image {
-  width: 50%;
-  height: auto;
-  margin: 2em 0;
+    width: 50%;
+    height: auto;
+    margin: 2em 0;
 }
 
 .description {
-  display: inline-block;
-  width: 45%;
-  text-align: center;
+    display: inline-block;
+    width: 45%;
+    text-align: center;
 }
 
 footer {
-  background-color: var(--colour-main);
-  height: 20em;
-  position: absolute;
-  left: 0;
-  right: 0;
+    background-color: var(--colour-main);
+    height: 10em;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer * {
+    padding: auto;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--colour-light);
+}
+
+
+@media only screen and (max-width: 768px) {
+    #content {
+        width: 95%;
+    }
+
+    .right {
+        float: left;
+    }
+
+    nav a button {
+        height: 3em;
+        width: 32%;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin: 2em 0;
+    }
+
+    .description {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #content {
+        width: 100%;
+    }
 }
